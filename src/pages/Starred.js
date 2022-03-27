@@ -28,7 +28,7 @@ const Starred = () => {
   }, [starred]);
   return (
     <MainPageLayout>
-      {isLoading && <div>Shows are still loading</div>}
+      {isLoading && <div></div>}
       {error && <div>Error occured:{error}</div>}
       {!isLoading && !shows && <div>No Shows were added</div>}
       {!isLoading && !error && shows && <ShowGrid data={shows} />}
